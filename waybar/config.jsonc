@@ -1,0 +1,82 @@
+{
+	"layer": "top",
+	"position": "top",
+	"mod": "dock",
+	"height": 40,
+	"exclusive": true,
+	"passthrough": false,
+	"gtk-layer-shell": true,
+	"margin": "0px 0px 0px 0px",
+
+	"modules-left": ["hyprland/workspaces"],
+	// "modules-center": ["wlr/taskbar"],
+	"modules-right": ["memory", "cpu", "custom/seperator", "clock", "network"],
+
+	"cpu": {
+    "rotate": 90,
+    "interval": 10,
+		"format-alt": "󰍛 {usage}%",
+		"format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}\n{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}\n{icon12}{icon13}{icon14}{icon15}{icon16}{icon17}\n{icon18}{icon19}{icon20}{icon21}{icon22}{icon23}",
+		"format-icons": ["▫", "▪", "□", "▣", "■"]
+	},
+
+	"memory": {
+		"interval": 30,
+		"format": "{icon}",
+		"format-icons": ["░░", "▒░", "▒▒", "▓▒", "▓▓", "█▓", "██"],
+		"format-alt": "󰾅 {used}GB",
+		"max-length": 10,
+		"tooltip": true,
+		"tooltip-format": " {used:0.1f}GB/{total:0.1f}GB"
+	},
+
+	"clock": {
+		"format": "{:%H:%M}",
+		"format-alt": "{:%H:%M %D}",
+		"tooltip-format": "{calendar}"
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"1": "一",
+			"2": "二",
+			"3": "三",
+			"4": "四",
+			"5": "五",
+			"6": "六",
+			"7": "七",
+			"8": "八",
+			"9": "九",
+			"10": "十"
+		},
+		"sort-by-number": true
+	},
+
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": 24,
+		"icon-theme": "Adwaita",
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"ignore-list": ["kitty"],
+		"app_ids-mapping": {
+			// "firefoxdeveloperedition": "firefox-developer-edition"
+		}
+	},
+
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "tooltip-format-wifi": "{essid} {signalStrength}%",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-disconnected": "⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+
+  "custom/seperator": {
+    "format": "│"
+  }
+}
