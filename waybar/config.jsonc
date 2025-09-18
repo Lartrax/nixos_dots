@@ -15,7 +15,6 @@
 	"cpu": {
     "rotate": 90,
     "interval": 10,
-		"format-alt": "󰍛 {usage}%",
 		"format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}\n{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}\n{icon12}{icon13}{icon14}{icon15}{icon16}{icon17}\n{icon18}{icon19}{icon20}{icon21}{icon22}{icon23}",
 		"format-icons": ["▫", "▪", "□", "▣", "■"]
 	},
@@ -24,7 +23,6 @@
 		"interval": 30,
 		"format": "{icon}",
 		"format-icons": ["░░", "▒░", "▒▒", "▓▒", "▓▓", "█▓", "██"],
-		"format-alt": "󰾅 {used}GB",
 		"max-length": 10,
 		"tooltip": true,
 		"tooltip-format": " {used:0.1f}GB/{total:0.1f}GB"
