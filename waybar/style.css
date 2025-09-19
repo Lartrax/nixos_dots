@@ -89,7 +89,7 @@ tooltip {
 #custom-wbar,
 #custom-power,
 #tray {
-	font-size: 18px;
+	font-size: 16px;
 	color: @main-color;
 	opacity: 0.9;
 	padding-left: 12px;
@@ -102,6 +102,7 @@ tooltip {
 
 #memory {
   font-size: 20px;
+  padding-bottom: 4px;
 }
 
 #window,
